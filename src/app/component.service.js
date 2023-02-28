@@ -6,16 +6,17 @@ class ComponentService {
         this.resultDiv = document.getElementById("result");
     }
 
-getInputs() {
-    return [this.numberOneInput.value, this.numberTwoInput.value];
-}
+    getInputs() {
+        console.log(this.numberOneInput.value, this.numberTwoInput.value);
+        return [this.numberOneInput.value, this.numberTwoInput.value];
+    }
 
-setResults(str) {
-    this.resultDiv.innerText = str;
-}
+    setResults(str) {
+        this.resultDiv.innerText = str;
+    }
 
-onclick(cb) {
-    this.addValuesButton.addEventListener("click", cb);
-}
+    onClick(cb) {
+        this.addValuesButton.addEventListener("click", cb);
+    }
 
 }
